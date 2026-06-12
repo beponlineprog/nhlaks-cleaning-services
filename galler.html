@@ -1,1 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery | Nhlaks Cleaning Services</title>
 
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f7fa;
+color:#333;
+}
+
+header{
+background:#003d99;
+color:white;
+padding:15px 0;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+.logo h1{
+font-size:2rem;
+}
+
+.logo p{
+color:#ffd700;
+}
+
+nav{
+margin-top:10px;
+}
+
+nav ul{
+display:flex;
+gap:20px;
+list-style:none;
+flex-wrap:wrap;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#ffd700;
+}
+
+.hero{
+background:linear-gradient(rgba(0,61,153,.9),rgba(0,61,153,.9));
+color:white;
+text-align:center;
+padding:80px 20px;
+}
+
+.hero h2{
+font-size:2.5rem;
+margin-bottom:10px;
+}
+
+.section{
+padding:60px 0;
+}
+
+.section-title{
+text-align:center;
+color:#003d99;
+margin-bottom:40px;
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.gallery-card{
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,.1);
+}
+
+.gallery-card img{
+width:100%;
+height:250px;
+object-fit:cover;
+display:block;
+}
+
+.gallery-info{
+padding:20px;
+text-align:center;
+}
+
+.gallery-info h3{
+color:#003d99;
+margin-bottom:10px;
+}
+
+.testimonials{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.testimonial{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,.1);
+}
+
+.testimonial h4{
+color:#003d99;
+margin-top:15px;
+}
+
+footer{
+background:#001f4d;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+@media(max-width:768px){
+
+nav ul{
+flex-direction:column;
+}
+
+.hero h2{
+font-size:2rem;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+
+<div class="container">
+
+<div class="logo">
+<h1>Nhlaks Cleaning Services</h1>
+<p>Your Clean Space, Our Pride!</p>
+</div>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<h2>Our Gallery</h2>
+
+<p>
+Quality Cleaning Results You Can Trust
+</p>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<h2 class="section-title">
+Before & After Cleaning Projects
+</h2>
+
+<div class="gallery-grid">
+
+<div class="gallery-card">
+<img src="images/before1.jpg" alt="Before Cleaning">
+<div class="gallery-info">
+<h3>Before Cleaning</h3>
+<p>Living room before deep cleaning.</p>
+</div>
+</div>
+
+<div class="gallery-card">
+<img src="images/after1.jpg" alt="After Cleaning">
+<div class="gallery-info">
+<h3>After Cleaning</h3>
+<p>Living room after deep cleaning.</p>
+</div>
+</div>
+
+<div class="gallery-card">
+<img src="images/before2.jpg" alt="Before Cleaning">
+<div class="gallery-info">
+<h3>Before Cleaning</h3>
+<p>Kitchen before professional cleaning.</p>
+</div>
+</div>
+
+<div class="gallery-card">
+<img src="images/after2.jpg" alt="After Cleaning">
+<div class="gallery-info">
+<h3>After Cleaning</h3>
+<p>Kitchen after professional cleaning.</p>
+</div>
+</div>
+
+<div class="gallery-card">
+<img src="images/before3.jpg" alt="Before Cleaning">
+<div class="gallery-info">
+<h3>Before Cleaning</h3>
+<p>Office cleaning project.</p>
+</div>
+</div>
+
+<div class="gallery-card">
+<img src="images/after3.jpg" alt="After Cleaning">
+<div class="gallery-info">
+<h3>After Cleaning</h3>
+<p>Office cleaned and sanitized.</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<h2 class="section-title">
+Customer Testimonials
+</h2>
+
+<div class="testimonials">
+
+<div class="testimonial">
+<p>
+"Nhlaks Cleaning Services did an excellent job cleaning our home. Very professional and affordable."
+</p>
+<h4>★★★★★ - Happy Customer</h4>
+</div>
+
+<div class="testimonial">
+<p>
+"Our office has never looked this clean. Great attention to detail."
+</p>
+<h4>★★★★★ - Business Client</h4>
+</div>
+
+<div class="testimonial">
+<p>
+"Reliable, friendly and always on time. Highly recommended."
+</p>
+<h4>★★★★★ - Returning Customer</h4>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 Nhlaks Cleaning Services | 078 557 2248
+</p>
+
+</footer>
+
+</body>
+  </html>
