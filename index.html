@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nhlaks Cleaning Services | Your Clean Space, Our Pride</title>
+<title>Nhlaks Cleaning Services | Home</title>
 
 <style>
 
@@ -22,7 +22,6 @@ line-height:1.6;
 
 header{
 background:#003d99;
-color:white;
 padding:15px 0;
 position:sticky;
 top:0;
@@ -35,23 +34,29 @@ max-width:1200px;
 margin:auto;
 }
 
+.logo{
+text-align:center;
+color:white;
+}
+
 .logo h1{
 font-size:2rem;
 }
 
 .logo p{
-font-size:0.9rem;
 color:#ffd700;
+font-weight:bold;
 }
 
 nav{
-margin-top:10px;
+margin-top:15px;
 }
 
 nav ul{
 display:flex;
+justify-content:center;
 list-style:none;
-gap:20px;
+gap:25px;
 flex-wrap:wrap;
 }
 
@@ -59,49 +64,47 @@ nav a{
 color:white;
 text-decoration:none;
 font-weight:bold;
+transition:0.3s;
 }
 
 nav a:hover{
 color:#ffd700;
 }
 
-.hero{
-background:linear-gradient(rgba(0,61,153,.8),rgba(0,61,153,.8)),
-url('images/poster.png');
-background-size:cover;
-background-position:center;
-color:white;
+.banner{
+width:100%;
+background:white;
+}
+
+.banner img{
+width:100%;
+height:auto;
+display:block;
+}
+
+.booking-bar{
+background:#003d99;
+padding:25px;
 text-align:center;
-padding:120px 20px;
-}
-
-.hero h2{
-font-size:3rem;
-margin-bottom:20px;
-}
-
-.hero p{
-font-size:1.2rem;
-margin-bottom:25px;
 }
 
 .btn{
 display:inline-block;
-padding:12px 25px;
-border-radius:5px;
+padding:14px 25px;
+margin:8px;
 text-decoration:none;
+border-radius:6px;
 font-weight:bold;
-margin:5px;
-}
-
-.btn-book{
-background:#ffd700;
-color:#003d99;
 }
 
 .btn-whatsapp{
 background:#25D366;
 color:white;
+}
+
+.btn-quote{
+background:#ffd700;
+color:#003d99;
 }
 
 section{
@@ -110,85 +113,113 @@ padding:60px 0;
 
 .section-title{
 text-align:center;
-margin-bottom:40px;
-color:#003d99;
 font-size:2rem;
+margin-bottom:30px;
+color:#003d99;
 }
 
-.about{
+.about-box{
 background:white;
 padding:30px;
 border-radius:10px;
 box-shadow:0 2px 10px rgba(0,0,0,.1);
 }
 
-.services{
+.features{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
 }
 
-.card{
+.feature{
 background:white;
 padding:25px;
 border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,.1);
 text-align:center;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
 }
 
-.card h3{
+.feature h3{
 color:#003d99;
 margin-bottom:10px;
 }
 
-.price{
-color:#25D366;
-font-weight:bold;
-font-size:1.2rem;
-}
-
-.features{
+.gallery-preview{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:15px;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
 }
 
-.feature{
-background:white;
-padding:20px;
+.gallery-preview img{
+width:100%;
+height:220px;
+object-fit:cover;
 border-radius:10px;
 box-shadow:0 2px 10px rgba(0,0,0,.1);
-text-align:center;
 }
 
-.contact{
+.review-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.review{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.review h4{
+color:#003d99;
+margin-top:10px;
+}
+
+.areas{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.area{
+background:white;
+padding:20px;
+text-align:center;
+border-radius:10px;
+font-weight:bold;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.contact-box{
 background:#003d99;
 color:white;
 padding:40px;
 border-radius:10px;
+text-align:center;
 }
 
-.contact p{
-margin-bottom:15px;
+.contact-box p{
+margin-bottom:10px;
 }
 
 footer{
 background:#001f4d;
 color:white;
 text-align:center;
-padding:20px;
+padding:25px;
 margin-top:40px;
 }
 
 @media(max-width:768px){
 
-.hero h2{
-font-size:2rem;
-}
-
 nav ul{
 flex-direction:column;
 gap:10px;
+}
+
+.logo h1{
+font-size:1.6rem;
 }
 
 }
@@ -221,26 +252,19 @@ gap:10px;
 
 </header>
 
-<section class="hero">
+<section class="banner">
+<img src="banner.png" alt="Nhlaks Cleaning Services Banner">
+</section>
 
-<div class="container">
-
-<h2>Professional Cleaning Services</h2>
-
-<p>
-We Clean, So You Can Shine!
-Serving Etwatwa, Daveyton and Benoni.
-</p>
-
-<a href="contact.html" class="btn btn-book">
-Book Now
-</a>
+<section class="booking-bar">
 
 <a href="https://wa.me/27785572248" class="btn btn-whatsapp">
-WhatsApp Us
+📱 WhatsApp Booking
 </a>
 
-</div>
+<a href="contact.html" class="btn btn-quote">
+📋 Request Quote
+</a>
 
 </section>
 
@@ -248,13 +272,18 @@ WhatsApp Us
 
 <div class="container">
 
-<h2 class="section-title">About Us</h2>
+<h2 class="section-title">About Nhlaks Cleaning Services</h2>
 
-<div class="about">
+<div class="about-box">
 
 <p>
-Nhlaks Cleaning Services provides reliable, affordable and professional cleaning solutions for homes, apartments, offices and businesses.
-We are committed to delivering spotless results, excellent customer service and complete customer satisfaction.
+Nhlaks Cleaning Services is a professional cleaning company based in Etwatwa, dedicated to providing reliable, affordable and high-quality cleaning solutions for homes, apartments, offices and businesses.
+</p>
+
+<br>
+
+<p>
+We proudly serve Etwatwa, Daveyton and Benoni with professional cleaning services designed to keep your environment clean, healthy and comfortable.
 </p>
 
 </div>
@@ -271,11 +300,25 @@ We are committed to delivering spotless results, excellent customer service and 
 
 <div class="features">
 
-<div class="feature">✅ Trusted & Reliable</div>
-<div class="feature">🌱 Eco-Friendly Products</div>
-<div class="feature">⭐ Quality Cleaning</div>
-<div class="feature">⏰ On Time Every Time</div>
-<div class="feature">😊 100% Customer Satisfaction</div>
+<div class="feature">
+<h3>✅ Trusted & Reliable</h3>
+<p>Dependable cleaning services every time.</p>
+</div>
+
+<div class="feature">
+<h3>⭐ Quality Cleaning</h3>
+<p>Professional results with attention to detail.</p>
+</div>
+
+<div class="feature">
+<h3>🌱 Eco-Friendly Products</h3>
+<p>Safe products for homes and workplaces.</p>
+</div>
+
+<div class="feature">
+<h3>😊 Customer Satisfaction</h3>
+<p>Your happiness is our priority.</p>
+</div>
 
 </div>
 
@@ -287,17 +330,104 @@ We are committed to delivering spotless results, excellent customer service and 
 
 <div class="container">
 
-<h2 class="section-title">Contact Information</h2>
+<h2 class="section-title">Gallery Preview</h2>
 
-<div class="contact">
+<div class="gallery-preview">
 
-<p><strong>Phone:</strong> 078 557 2248</p>
+<img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952" alt="Cleaning Service">
+
+<img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac" alt="House Cleaning">
+
+<img src="https://images.unsplash.com/photo-1563453392212-326f5e854473" alt="Deep Cleaning">
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">Customer Reviews</h2>
+
+<div class="review-grid">
+
+<div class="review">
+<p>
+⭐⭐⭐⭐⭐
+<br><br>
+Excellent service and affordable prices. Highly recommended.
+</p>
+<h4>Happy Customer</h4>
+</div>
+
+<div class="review">
+<p>
+⭐⭐⭐⭐⭐
+<br><br>
+Professional, punctual and friendly staff.
+</p>
+<h4>Residential Client</h4>
+</div>
+
+<div class="review">
+<p>
+⭐⭐⭐⭐⭐
+<br><br>
+My house has never looked cleaner.
+</p>
+<h4>Returning Client</h4>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">Service Areas</h2>
+
+<div class="areas">
+
+<div class="area">📍 Etwatwa</div>
+
+<div class="area">📍 Daveyton</div>
+
+<div class="area">📍 Benoni</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<div class="contact-box">
+
+<h2>Book Your Cleaning Service Today</h2>
+
+<br>
+
+<p><strong>Phone / WhatsApp:</strong> 078 557 2248</p>
 
 <p><strong>Email:</strong> norikhotso@gmail.com</p>
 
 <p><strong>Address:</strong> 35446 Ndumo Street, Etwatwa</p>
 
-<p><strong>Service Areas:</strong> Etwatwa, Daveyton, Benoni</p>
+<br>
+
+<a href="https://wa.me/27785572248" class="btn btn-whatsapp">
+Book via WhatsApp
+</a>
 
 </div>
 
@@ -308,11 +438,14 @@ We are committed to delivering spotless results, excellent customer service and 
 <footer>
 
 <p>
-© 2026 Nhlaks Cleaning Services.
-All Rights Reserved.
+© 2026 Nhlaks Cleaning Services. All Rights Reserved.
+</p>
+
+<p>
+Your Clean Space, Our Pride!
 </p>
 
 </footer>
 
 </body>
-  </html>
+</html>
