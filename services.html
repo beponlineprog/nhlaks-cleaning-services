@@ -1,353 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Services | Nhlaks Cleaning Services</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Omega Cleaning Services</title>
 
-<style>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
+        body{
+            background:#f4f4f4;
+            color:#333;
+        }
 
-body{
-background:#f5f7fa;
-color:#333;
-line-height:1.6;
-}
+        header{
+            background:#003366;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
 
-header{
-background:#003d99;
-color:white;
-padding:15px 0;
-}
+        nav{
+            background:#0055a5;
+            text-align:center;
+            padding:12px;
+        }
 
-.container{
-width:90%;
-max-width:1200px;
-margin:auto;
-}
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+        }
 
-.logo h1{
-font-size:2rem;
-}
+        nav a:hover{
+            color:#ffd700;
+        }
 
-.logo p{
-color:#ffd700;
-}
+        .banner img{
+            width:100%;
+            display:block;
+        }
 
-nav{
-margin-top:10px;
-}
+        .services{
+            padding:50px 20px;
+            text-align:center;
+        }
 
-nav ul{
-display:flex;
-gap:20px;
-list-style:none;
-flex-wrap:wrap;
-}
+        .services h1{
+            color:#003366;
+            margin-bottom:15px;
+        }
 
-nav a{
-color:white;
-text-decoration:none;
-font-weight:bold;
-}
+        .services p.intro{
+            max-width:800px;
+            margin:0 auto 40px;
+            color:#555;
+        }
 
-nav a:hover{
-color:#ffd700;
-}
+        .service-grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+            gap:25px;
+            max-width:1200px;
+            margin:auto;
+        }
 
-.hero{
-background:linear-gradient(rgba(0,61,153,.9),rgba(0,61,153,.9));
-color:white;
-text-align:center;
-padding:80px 20px;
-}
+        .service-card{
+            background:white;
+            border-radius:10px;
+            padding:25px;
+            box-shadow:0 2px 10px rgba(0,0,0,0.1);
+            transition:0.3s;
+        }
 
-.hero h2{
-font-size:2.5rem;
-margin-bottom:10px;
-}
+        .service-card:hover{
+            transform:translateY(-5px);
+        }
 
-.section{
-padding:60px 0;
-}
+        .service-card h3{
+            color:#003366;
+            margin-bottom:15px;
+        }
 
-.section-title{
-text-align:center;
-color:#003d99;
-margin-bottom:40px;
-font-size:2rem;
-}
+        .service-card p{
+            line-height:1.6;
+            color:#555;
+            margin-bottom:20px;
+        }
 
-.services-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
-}
+        .price{
+            font-size:20px;
+            font-weight:bold;
+            color:#28a745;
+            margin-bottom:15px;
+        }
 
-.service-card{
-background:white;
-padding:25px;
-border-radius:12px;
-box-shadow:0 4px 12px rgba(0,0,0,.1);
-text-align:center;
-transition:.3s;
-}
+        .book-btn{
+            display:inline-block;
+            background:#0055a5;
+            color:white;
+            padding:10px 20px;
+            text-decoration:none;
+            border-radius:5px;
+            font-weight:bold;
+        }
 
-.service-card:hover{
-transform:translateY(-5px);
-}
+        .book-btn:hover{
+            background:#003366;
+        }
 
-.service-card h3{
-color:#003d99;
-margin-bottom:10px;
-}
-
-.price{
-font-size:1.5rem;
-font-weight:bold;
-color:#25D366;
-margin:15px 0;
-}
-
-.book-btn{
-display:inline-block;
-background:#25D366;
-color:white;
-padding:12px 20px;
-text-decoration:none;
-border-radius:6px;
-font-weight:bold;
-}
-
-.book-btn:hover{
-opacity:0.9;
-}
-
-.pricing-table{
-overflow-x:auto;
-margin-top:40px;
-}
-
-table{
-width:100%;
-border-collapse:collapse;
-background:white;
-box-shadow:0 4px 12px rgba(0,0,0,.1);
-}
-
-th{
-background:#003d99;
-color:white;
-padding:15px;
-}
-
-td{
-padding:15px;
-border-bottom:1px solid #ddd;
-}
-
-tr:hover{
-background:#f0f6ff;
-}
-
-footer{
-background:#001f4d;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:40px;
-}
-
-@media(max-width:768px){
-
-nav ul{
-flex-direction:column;
-}
-
-.hero h2{
-font-size:2rem;
-}
-
-}
-
-</style>
+        footer{
+            background:#003366;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:50px;
+        }
+    </style>
 </head>
 <body>
 
 <header>
-
-<div class="container">
-
-<div class="logo">
-<h1>Nhlaks Cleaning Services</h1>
-<p>Your Clean Space, Our Pride!</p>
-</div>
-
-<nav>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="gallery.html">Gallery</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
-
-</div>
-
+    <h1>Omega Cleaning Services</h1>
+    <p>Professional Cleaning Solutions You Can Trust</p>
 </header>
 
-<section class="hero">
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+</nav>
 
-<h2>Our Cleaning Services</h2>
-
-<p>
-Professional, Affordable and Reliable Cleaning Solutions
-</p>
-
-</section>
-
-<section class="section">
-
-<div class="container">
-
-<h2 class="section-title">Popular Services</h2>
-
-<div class="services-grid">
-
-<div class="service-card">
-<h3>🏠 House Cleaning</h3>
-<p>General cleaning for homes and apartments.</p>
-<div class="price">R200</div>
-<a href="https://wa.me/27785572248?text=I%20want%20to%20book%20House%20Cleaning"
-class="book-btn">Book Now</a>
+<div class="banner">
+    <img src="banner.png" alt="Omega Cleaning Services Banner">
 </div>
 
-<div class="service-card">
-<h3>🧹 Deep Cleaning</h3>
-<p>Complete top-to-bottom cleaning service.</p>
-<div class="price">R350</div>
-<a href="https://wa.me/27785572248?text=I%20want%20to%20book%20Deep%20Cleaning"
-class="book-btn">Book Now</a>
-</div>
+<section class="services">
+    <h1>Our Services</h1>
 
-<div class="service-card">
-<h3>🪟 Window Cleaning</h3>
-<p>Crystal-clear windows for homes and offices.</p>
-<div class="price">R200</div>
-<a href="https://wa.me/27785572248?text=I%20want%20to%20book%20Window%20Cleaning"
-class="book-btn">Book Now</a>
-</div>
+    <p class="intro">
+        Omega Cleaning Services provides professional, reliable, and affordable
+        cleaning solutions for homes, offices, and commercial properties.
+        Our experienced team is committed to delivering exceptional results
+        and maintaining the highest standards of cleanliness.
+    </p>
 
-<div class="service-card">
-<h3>👕 Laundry Service</h3>
-<p>Professional washing and folding service.</p>
-<div class="price">From R100</div>
-<a href="https://wa.me/27785572248?text=I%20want%20Laundry%20Service"
-class="book-btn">Book Now</a>
-</div>
+    <div class="service-grid">
 
-<div class="service-card">
-<h3>🧽 Carpet Cleaning</h3>
-<p>Deep carpet cleaning. Price depends on size.</p>
-<div class="price">Quote Required</div>
-<a href="https://wa.me/27785572248?text=I%20need%20Carpet%20Cleaning"
-class="book-btn">Get Quote</a>
-</div>
+        <div class="service-card">
+            <h3>🏠 Residential Cleaning</h3>
+            <p>
+                Keep your home spotless and comfortable with our professional
+                residential cleaning service. We clean living areas, bedrooms,
+                kitchens, and bathrooms to maintain a healthy environment.
+            </p>
+            <div class="price">From R350</div>
+            <a href="contact.html" class="book-btn">Book Now</a>
+        </div>
 
-<div class="service-card">
-<h3>🛏 Blanket Cleaning</h3>
-<p>Fresh and hygienic blanket cleaning.</p>
-<div class="price">R80 - R120</div>
-<a href="https://wa.me/27785572248?text=I%20need%20Blanket%20Cleaning"
-class="book-btn">Book Now</a>
-</div>
+        <div class="service-card">
+            <h3>🏢 Office Cleaning</h3>
+            <p>
+                Create a clean and productive workplace with our office cleaning
+                solutions. We ensure workspaces, meeting rooms, and common areas
+                remain neat and hygienic.
+            </p>
+            <div class="price">From R500</div>
+            <a href="contact.html" class="book-btn">Book Now</a>
+        </div>
 
-</div>
+        <div class="service-card">
+            <h3>🧹 Deep Cleaning</h3>
+            <p>
+                Our deep cleaning service targets hard-to-reach areas, stubborn
+                dirt, and built-up grime, leaving your property thoroughly cleaned
+                and refreshed.
+            </p>
+            <div class="price">From R700</div>
+            <a href="contact.html" class="book-btn">Book Now</a>
+        </div>
 
-</div>
+        <div class="service-card">
+            <h3>🚚 Move-In / Move-Out Cleaning</h3>
+            <p>
+                Whether you're moving into a new property or preparing one for
+                new occupants, we provide comprehensive cleaning for every room.
+            </p>
+            <div class="price">From R800</div>
+            <a href="contact.html" class="book-btn">Book Now</a>
+        </div>
 
-</section>
+        <div class="service-card">
+            <h3>🪟 Window Cleaning</h3>
+            <p>
+                Enhance the appearance of your property with streak-free,
+                sparkling windows cleaned using safe and effective methods.
+            </p>
+            <div class="price">From R250</div>
+            <a href="contact.html" class="book-btn">Book Now</a>
+        </div>
 
-<section class="section">
+        <div class="service-card">
+            <h3>🛋️ Carpet & Upholstery Cleaning</h3>
+            <p>
+                Remove dust, stains, and odors from carpets, couches, and
+                upholstered furniture to improve comfort and cleanliness.
+            </p>
+            <div class="price">From R450</div>
+            <a href="contact.html" class="book-btn">Book Now</a>
+        </div>
 
-<div class="container">
+        <div class="service-card">
+            <h3>🚻 Bathroom Sanitization</h3>
+            <p>
+                We thoroughly clean and disinfect bathrooms, removing germs,
+                stains, and odors for a fresh and hygienic environment.
+            </p>
+            <div class="price">From R300</div>
+            <a href="contact.html" class="book-btn">Book Now</a>
+        </div>
 
-<h2 class="section-title">Pricing Table</h2>
+        <div class="service-card">
+            <h3>🍽️ Kitchen Cleaning</h3>
+            <p>
+                Our kitchen cleaning service focuses on countertops, sinks,
+                appliances, and surfaces to ensure a safe cooking environment.
+            </p>
+            <div class="price">From R350</div>
+            <a href="contact.html" class="book-btn">Book Now</a>
+        </div>
 
-<div class="pricing-table">
+        <div class="service-card">
+            <h3>🏬 Commercial Cleaning</h3>
+            <p>
+                Professional cleaning solutions for shops, schools, churches,
+                warehouses, and other commercial facilities.
+            </p>
+            <div class="price">Quote Required</div>
+            <a href="contact.html" class="book-btn">Request Quote</a>
+        </div>
 
-<table>
+        <div class="service-card">
+            <h3>🧴 Disinfection & Sanitization</h3>
+            <p>
+                Protect your family, staff, and customers with specialized
+                sanitization services designed to reduce germs and bacteria.
+            </p>
+            <div class="price">From R400</div>
+            <a href="contact.html" class="book-btn">Book Now</a>
+        </div>
 
-<tr>
-<th>Service</th>
-<th>Price</th>
-<th>Booking</th>
-</tr>
+        <div class="service-card">
+            <h3>🌿 Garden & Yard Cleanup</h3>
+            <p>
+                Keep your outdoor spaces neat and attractive with debris removal,
+                basic maintenance, and yard cleanup services.
+            </p>
+            <div class="price">From R450</div>
+            <a href="contact.html" class="book-btn">Book Now</a>
+        </div>
 
-<tr>
-<td>House Cleaning</td>
-<td>R200</td>
-<td><a href="https://wa.me/27785572248">WhatsApp</a></td>
-</tr>
+        <div class="service-card">
+            <h3>🗑️ Post-Construction Cleaning</h3>
+            <p>
+                After renovations or construction work, we remove dust, debris,
+                and residue to leave your property clean and ready for use.
+            </p>
+            <div class="price">Quote Required</div>
+            <a href="contact.html" class="book-btn">Request Quote</a>
+        </div>
 
-<tr>
-<td>Deep Cleaning</td>
-<td>R350</td>
-<td><a href="https://wa.me/27785572248">WhatsApp</a></td>
-</tr>
-
-<tr>
-<td>Window Cleaning</td>
-<td>R200</td>
-<td><a href="https://wa.me/27785572248">WhatsApp</a></td>
-</tr>
-
-<tr>
-<td>Laundry Service</td>
-<td>From R100</td>
-<td><a href="https://wa.me/27785572248">WhatsApp</a></td>
-</tr>
-
-<tr>
-<td>Carpet Cleaning</td>
-<td>Depends on Size</td>
-<td><a href="https://wa.me/27785572248">WhatsApp</a></td>
-</tr>
-
-<tr>
-<td>Small Blanket</td>
-<td>R80</td>
-<td><a href="https://wa.me/27785572248">WhatsApp</a></td>
-</tr>
-
-<tr>
-<td>Big Blanket</td>
-<td>R120</td>
-<td><a href="https://wa.me/27785572248">WhatsApp</a></td>
-</tr>
-
-</table>
-
-</div>
-
-</div>
-
+    </div>
 </section>
 
 <footer>
-
-<p>
-© 2026 Nhlaks Cleaning Services | 078 557 2248
-</p>
-
+    <p>&copy; 2026 Omega Cleaning Services. All Rights Reserved.</p>
 </footer>
 
 </body>
-  </html>
+</html>
